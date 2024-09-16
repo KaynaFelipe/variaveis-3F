@@ -1,3 +1,6 @@
+const prompt = require('prompt-sync');
+const entrada = prompt();
+
 let idade = 18;
 const anoNascimento = 2006;
 let anoAtual = 2024;
@@ -30,3 +33,16 @@ listaDeDestinos.push("Barreirinhas");
 listaDeDestinos.push("Fernando de Noronha");
 
 console.log(listaDeDestinos);
+
+var nomeComprador = entrada("Qual seu nome? ");
+var idadeComprador = entrada("Qual a sua idade? ");
+
+if(idadeComprador >= 18) {
+  console.log("Olá senhor(a) " + nomeComprador);
+  console.log("Comprador maior de idade");
+  console.log("Destinos disponíveis: " + listaDeDestinos);
+} else {
+  console.log("Olá senhor(a) " + nomeComprador);
+  console.log("Infelizmente, não será finalizado o procedimento, pois idade informada é menor de 18 anos de idade.");
+  console.log("Não será finalizado devido idade");
+}

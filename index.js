@@ -34,6 +34,18 @@ listaDeDestinos.push("Fernando de Noronha");
 
 console.log(listaDeDestinos);
 
+const loginCerto = "teste";
+const senhaCerta = 2006;
+
+var login = entrada("qual é o seu login? ");
+var senha = entrada("digite sua senha: ");
+
+while(login != loginCerto || senha != senhaCerta){
+  console.log("Login ou senha incorretos");
+  login = entrada("Qual é o seu login? ");
+  senha = entrada("Digite sua senha: ");
+}
+
 var nomeComprador = entrada("Qual seu nome? ");
 var idadeComprador = entrada("Qual a sua idade? ");
 
